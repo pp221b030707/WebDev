@@ -1,0 +1,234 @@
+*{
+    margin:0;/*overall margin of 0 for the document*/
+    padding:0;
+    box-sizing:border-box;/* . It guarantees that the content box
+     shrinks to make space for the padding 
+     and borders. Therefore, if you set your
+      element width to 200 pixels, border-box 
+      makes sure that the content, padding, 
+      and borders fit in this number.*/
+    /*border:1px solid red;*/
+
+}
+body{
+    background:#fafafa;
+    font-family: Helvetica,sans-serif;
+    min-height:100vh;
+    /*In fact, height 100% corresponds to
+     height of the screen minus the address
+      bar at top of screen, while 100vh
+       corresponds to height of the screen
+        without the address bar.*/
+    display:flex;
+    /*body=flex container
+    everything that is now within the body is gonna be a flex item
+    and by default is gonna be displayed in a row side by side
+    within the body is only section tag
+    section tag-flex item
+    footer tag-flex item
+    */
+    flex-direction:column;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    align-items:center;/*so that items in the footer would be in the center*/
+}
+.wrapper{
+    /*wraps the left and right
+    left-phones
+    right-login panels*/
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-grow:1;
+/*so that the wrapper would take all of the free
+space regardless of how big smbd's screen is*/
+    margin-top:30px;
+
+}
+.left{
+    position:relative;
+
+}
+.feed{
+   position:absolute; 
+   left:160px;
+   top:20px;
+}
+.panel{
+    width:350px;
+    background:#fff;
+    border:1px solid #dedede;
+    border-radius:2px;/*to smooth it out*/
+    padding-top:50px;
+    padding-bottom:20px;
+    padding-left:40px;
+    padding-right:40px;
+    /*padding is between the inside content and the border
+    margin  is between the border and the outside content*/
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left:0px;
+    margin-right:0px;
+    display:flex;
+    /*panel is the flex container*/
+}
+.login{
+    flex-direction:column;
+    align-items:center;
+}
+
+#logo
+{
+    width:175px;
+    height:51px;
+    margin-top:20px;
+    margin-bottom:30px;
+
+}
+form{
+width:100%;/*it will take up all the space in the panel*/
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+.input-box{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+    background-color:#fafafa;
+    border:solid 1px #dedede;
+    border-radius:2px;
+}
+.input-box::placeholder{
+    color:#8a8a8a;
+    font-size:12px;
+
+}
+.input-box:focus{/*focus activates when the item is selected*/
+outline:none;
+/* outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out"*/
+border:1px solid #8a8a8a;
+}
+.button{
+    width:100%;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding-top:7px;
+    padding-bottom:7px;
+    background-color:#0095f6;
+    color:#fff;
+    border-radius:5px;
+    border:none;
+    font-size:14px;
+    font-weight:bold;
+}
+.button:hover{
+    background-color:#4f67b0;
+}
+.button:focus{
+    background-color:#27c4f5;
+}
+.hr{
+    /*in order for 2 lines to appear in a row
+    use flexbox*/
+    display:flex;
+    width:100%;
+    font-size:12px;
+    color:#8a8a8a;
+    font-weight:bold;
+    gap:20px;
+    /*in order for the lines and the title to be aligned*/
+    align-items:center;
+
+}
+.line{
+    /*take up all the addional space and divide it 
+    between themselfes*/
+    flex-grow:1;
+    height:1px;
+    background:#8a8a8a;
+}
+.fb{
+    margin-top:20px;
+    margin-bottom:20px;
+    display:flex; 
+    gap:10px;
+}
+.fb a{
+    color:#385185; 
+    text-decoration:none;/*so that links wouldnt look as links*/
+    font-size:14px;
+    font-weight:550;
+}
+.forgot-password{
+    text-decoration:none;
+    color:#0057a3;
+    font-size:13px;
+}
+.signup{
+
+    font-size:14px;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:20px;
+    padding-right:20px;
+    
+    gap:5px;
+}
+.signup a{
+    color:#0095f6;
+    text-decoration:none;
+    font-weight:bold;
+}
+.apps{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-size:14px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.app-icons{
+    display:flex;
+    gap:15px;
+    margin-top:10px;/*to space them up from the 'ustanovite prilozhenie title'*/
+}
+footer{
+margin-bottom:40px;
+}
+ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    font-size:12px;
+    list-style:none;
+    gap:10px;
+    margin-top:20px;
+    margin-bottom:20px;
+    color:#8a8a8a;
+    
+}
+ul a{
+    text-decoration:none;
+    color:#8a8a8a;
+}
+.underline :hover{
+    text-decoration:underline;
+}
+.underline{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+
+}
+
+/*so that when u make the window smaller we get
+ left with the login panel
+ media query*/
+@media(max-width:860px)
+/*"when we drop below 860 do this:
+make phones dissapear*/
+{
+.left{
+    display:none;
+}
+}

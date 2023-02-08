@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background:#fff;
+    /*border:1px solid red;*/
+    font-family:"Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,sans-serif
+}
+
+.header{
+    display:flex;
+    flex-direction:row;
+    gap:800px;
+    margin-top:15px;
+    margin-bottom:15px;
+    justify-content:center;
+   
+}
+.header left{
+    display:flex;
+    position:relative;
+
+}
+.header img{
+    width:108px;
+    height:23px;
+}
+
+.header ul{
+display:flex;
+flex-direction:row;
+list-style:none;
+
+}
+.header ul a{
+    text-decoration:none;
+color:#000;
+padding-top:12px;
+padding-bottom:13px;
+padding-right:8px;
+padding-left:15px;
+font-size:12px;
+font-weight:400;
+line-height:22.5px;
+
+}
+.header ul a:hover{
+    text-decoration:underline;
+}
+.main{
+    display:flex;
+    justify-content:center;
+
+}
+.main img{
+    margin-left:580px;
+}
+.maintext{
+    flex-direction:row;
+    position:relative;
+    margin-top:200px;
+    background-color:rgba(0,0,0,0.0);
+    right:1500px;
+
+}
+.title1{
+
+    background-color:rgba(0,0,0,0.0);
+    font-size:40px;
+    padding-bottom:15px;
+
+}
+.title2{
+    background-color:rgba(0,0,0,0.0);
+    padding-bottom:20px;
+    font-size:20px;
+
+}
+button{
+    background-color:#0067b8;
+    color:#fff;
+    font-size:1rem;
+    font-weight:bold;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:12px;
+    padding-left:12px;
+    border:0.125rem solid transparent;
+    margin-right:20px;
+    border-radius:0.125rem;
+    line-height:1;
+
+}
+button:hover{
+    background-color:#203354;
+}
+.maintext a{
+    background-color:rgba(0,0,0,0.0);
+    font-size:16px;
+    font-weight:bold;
+}
+.maintext a:hover{
+    text-decoration:underline;
+}
+.news{
+    margin-top:125px;
+    display:flex;
+    flex-direction:row;
+   
+    justify-content:center;
+}
+.news img{
+
+    width:362px; 
+    height:205px;
+}
+.news ul{
+
+    display:flex;
+    list-style:none;
+    flex-direction:row;
+    gap:30px;
+    font-size:20px;
+}
+
+a{
+    text-decoration:none;
+    color:#333;
+}
+.acclinks{
+    color:#0067b8;
+}
+.acclinks:hover{
+    text-decoration:underline;
+}
+
+h4{
+    padding-bottom:20px;
+    padding-top:20px;
+}
+.news li{
+    display:flex;
+    gap:20px;
+    flex-direction:column;
+}
+
