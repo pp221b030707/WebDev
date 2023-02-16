@@ -1,0 +1,26 @@
+1.
+The postfix and prefix forms
+let a = 1, b = 1;
+
+let c = ++a; // c=2,a=2
+let d = b++; // d=1,b=2
+2.
+Assignment result
+let a=2;
+let x=1+(a*=2);//a=4,x=1+4=5
+3.
+Type conversions
+"" + 1 + 0//1
+"" - 1 + 0//-1
+true + false//1
+6 / "3"//2
+"2" * "3"//6
+4 + 5 + "px"//9+"px"="9"+"px"=9px
+"$" + 4 + 5//$45
+"4" - 2//2
+"4px" - 2//NaN
+"  -9  " + 5//" -9 5" the addition with a string appends the num 5 to the string
+"  -9  " - 5//-14 the substraction  always converts to numbers
+null + 1//1 bcs null becomes 0 after numeric conversiom
+undefined + 1//NaN bcs undefined becomes NaN after the numeric converesion
+" \t \n" - 2//-2

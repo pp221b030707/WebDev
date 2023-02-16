@@ -1,0 +1,6 @@
+1)If(a string with zero)
+if ("0") {
+  alert( 'Hello' );
+}
+//this alert is shown bcs any if non empty is statement becomes true
+the name of JS

@@ -1,0 +1,20 @@
+3 tests are layed out as a single function with 3 asserts,
+when error occurs it's less obvious what went wrong,
+if an error happens in the middle of  a complex execution flow, we will have to debug the test
+it is better  to block the test into multiple it blocks
+
+
+describe("Raises x to power n", function() {
+  it("5 in the power of 1 equals 5", function() {
+    assert.equal(pow(5, 1), 5);
+  });
+
+  // Mocha will run only this block
+  it.only("5 in the power of 2 equals 25", function() {
+    assert.equal(pow(5, 2), 25);
+  });
+
+  it("5 in the power of 3 equals 125", function() {
+    assert.equal(pow(5, 3), 125);
+  });
+});

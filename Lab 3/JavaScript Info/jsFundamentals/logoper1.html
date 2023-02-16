@@ -1,0 +1,32 @@
+<!--Check the login-->
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    login=prompt("Who's there?");
+    if (login=="Admin"){
+        password=prompt("Password?")
+        if(password=="TheMaster"){
+            alert("Welcome!")
+        }
+        else if(password=""){
+            alert("Canceled")
+        }
+        else{
+            alert("Wrong password")
+        }
+    }
+    else if(login==""){
+        alert("Canceled")
+    }
+    else {
+        alert("I don't know you")
+    }
+
+
+  </script>
+
+</body>
+
+</html>

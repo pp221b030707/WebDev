@@ -1,0 +1,3 @@
+TypeError: Cannot create property 'test' on string 'Hello'
+an error in strict mode
+because primitives are not objects and they cant store data

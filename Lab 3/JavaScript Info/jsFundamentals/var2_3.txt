@@ -1,0 +1,14 @@
+2)  let ourPlanetName="Earth";
+   let currentUserName="Aruzhan"
+3) 
+const BIRTHDAY = '18.04.1982'; // make birthday uppercase?
+
+const AGE = someCode(BIRTHDAY); // make age uppercase?
+Would it be right to use upper case for birthday? 
+For age? Or even for both?
+
+'birthday' can be used upper case, bcs it's hard-coded
+hard-coded means the values is known prior to execution,
+directly written into the coded
+'age' is evaluated in run-time, the age changes every year->
+better to use lower case

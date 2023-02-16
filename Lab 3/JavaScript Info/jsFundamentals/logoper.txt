@@ -1,0 +1,27 @@
+1)alert( null || 2 || undefined );
+OR returns the first true value-> 2
+2) alert(alert(1)||2||alert(3))
+The first OR || evaluates its left operand alert(1). That shows the first message with 1.
+The alert returns undefined, so OR goes on to the second operand searching for a truthy value.
+The second operand 2 is truthy, so the execution is halted, 2 is returned and then shown by the outer alert.
+There will be no 3, because the evaluation does not reach alert(3).
+3)alert(1&&null&&2)
+null bcs AND returns the first false value
+4)alert(alert(1)&&alert(2))
+
+->shows 1 then shows undefined and doesnt go any further
+5)alert(null||2&&3||4)
+2&&3->3
+null||3->3
+6)age is between 14 and 90 inclusively
+if(age>=14 && age<=90)
+7)age is NOT between 14 and 90 inclusively
+if(!(age>=14 && age<=90))
+8)
+Which of these alerts are going to execute?
+
+What will the results of the expressions be inside if(...)?
+
+if (-1 || 0) alert( 'first' );//-1 is true-> alert first is going to work
+if (-1 && 0) alert( 'second' );//false
+if (null || -1 && 1) alert( 'third' );//null or true is true so third alert is going to work

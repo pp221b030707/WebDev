@@ -1,0 +1,71 @@
+1)
+let i = 3;
+while (i) {
+  alert( i-- );
+}
+what is the last value alerted by this code
+while 3 alert 2
+while 2 alert 1
+while 1 alert 0
+while 0 WILL NOT WORK-> 0 is the answer
+2)
+Which values does the while loop show?
+1.
+let i = 0;
+while (++i < 5) alert( i );
+++i first increments i and then returns the new value
+while 1<5 alert 1
+while 2<5 alert 2
+while 3<5 alert 3
+while 4<5 alert 4
+while 5<5 NO-> 1234
+2.
+let i = 0;
+while (i++ < 5) alert( i );
+1,1,2,2,3,3,4,4,
+i++ is postfix
+++i is prefix
+postfix increments i to 5 but returns the old value
+while(4<5) alert(5)
+12345
+3)which values get shown by the 'for' loop?
+1.the postfix form
+for (let i = 0; i < 5; i++) alert( i );
+2.The prefix form
+for (let i = 0; i < 5; ++i) alert( i );
+are the same bcs the value returned by the increment is not used
+4) Output even numbers in the loop
+from 2 to 10
+for (let i = 2; i <= 10; i++) {
+  if (i % 2 == 0) {
+    alert( i );
+  }
+}
+5)Replace "for" with "while"
+
+for (let i = 0; i < 3; i++) {
+  alert( `number ${i}!` );
+}
+let i = 0;
+while (i < 3) {
+  alert( `number ${i}!` );
+  i++;
+}
+7)Repeat until the input is correct
+Write a loop which prompts for a number greater than 100.
+let num;
+do {
+  num = prompt("Enter a number greater than 100?", 0);
+} while (num <= 100 && num);
+8)Output prime numbers
+
+let n = 10;
+
+nextPrime: for (let i = 2; i <= n; i++) {
+
+  for (let j = 2; j < i; j++) { // look for a divisor..
+    if (i % j == 0) continue nextPrime; // not a prime, go next i
+  }
+
+  alert( i ); // a prime
+}
